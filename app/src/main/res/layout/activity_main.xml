@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setup"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnOverlayPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Allow 'Display over other apps'" />
+
+    <Button
+        android:id="@+id/btnAccessibilityPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2. Enable Accessibility Service" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="3. Pick which apps count as 'games' (bubble will auto-show for these):"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbAutoDetectAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Auto-include every app the Play Store marks as a Game" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
