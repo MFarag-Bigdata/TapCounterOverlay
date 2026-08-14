@@ -1,0 +1,5 @@
+<resources>
+    <color name="bubble_bg">#CC1E1E2E</color>
+    <color name="bubble_text">#FFFFFF</color>
+    <color name="accent">#4CAF50</color>
+</resources>
